@@ -1,0 +1,24 @@
+{
+  "name": "ai-test-automation",
+  "version": "0.1.0",
+  "description": "AI-powered autonomous test automation pipeline",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test:example": "tsx src/index.ts --steps examples/steps.ts",
+    "test:todo": "tsx src/index.ts --steps examples/todoapp.ts",
+    "prompt": "tsx src/prompt.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@playwright/test": "^1.50.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}

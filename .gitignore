@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+.ata/
+reports/
+test-results/
+playwright-report/
+.claude/
